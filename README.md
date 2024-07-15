@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+# Collers - Baykar Design Case
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A quiz app built using React, Vite, TailwindCSS, and TypeScript.
 
-Currently, two official plugins are available:
+Deployed demo: https://main--baykar-quiz-case.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technical Decisions and Details About the Project
 
-## Expanding the ESLint configuration
+For quiz questions, I used [Open Trivia DB](https://opentdb.com/api_config.php) as the provided [JSON Placeholder Posts](https://jsonplaceholder.typicode.com/posts) response is not suitable for a quiz application because it contains lorem ipsum texts which would make creating a question or answers somewhat meaningless.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+For this project, TailwindCSS is a better choice than Bootstrap because the design suits TailwindCSS much more than Bootstrap, and also Bootstrap is bloated. It comes with unnecessary styles that is hard to change or override, effectively making the codebase more fragile for future development in terms of styling.
 
-- Configure the top-level `parserOptions` property like this:
+TailwindCSS is more like a design system than a simple CSS framework. That's why I initially considered going with Radix Primitives + TailwindCSS as this is a great combo, unstyled yet accessible and performant primitive components and the power and structured approach TailwindCSS brings. But as the case study is one page, it would only bring in additional complexity so I decided against that.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Technologies and Resources Used
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- React
+- TailwindCSS
+- Vite
+- TypeScript
