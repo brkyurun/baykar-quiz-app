@@ -1,5 +1,12 @@
+import { Layout } from './components/Layout';
+import { QuizContainer } from './components/QuizContainer';
+
 function App() {
-  return <main className=""></main>;
+  return (
+    <Layout>
+      <QuizContainer />
+    </Layout>
+  );
 }
 
 export default App;
