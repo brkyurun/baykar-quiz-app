@@ -1,4 +1,4 @@
-# Collers - Baykar Design Case
+# Quiz App - Baykar Quiz Case
 
 A quiz app built using React, Vite, TailwindCSS, and TypeScript.
 
