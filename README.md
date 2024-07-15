@@ -18,3 +18,4 @@ TailwindCSS is more like a design system than a simple CSS framework. That's why
 - TailwindCSS
 - Vite
 - TypeScript
+- Open Trivia DB
